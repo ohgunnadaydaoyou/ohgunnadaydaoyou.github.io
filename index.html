@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.css">
+    <link rel="stylesheet" href="navbar.css">
+    <title>homepage</title>
+
+    <style>
+        *{
+            font-family: Arial,Microsoft JhengHei,微軟正黑體;
+        }
+        .bannerbgimg {
+            background-image: url('img/bd5.jpg');
+            background-position: 0% 50%;
+            background-size: cover;
+
+        }
+
+        .bgclr1 {
+            background-color: #F6D8AC;
+        }
+
+        .bgclr2 {
+            background-color: #F9E8CA;
+        }
+
+        .carousel-control-prev-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+            width: 40px;
+            height: 40px;
+        }
+
+        .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+            width: 40px;
+            height: 40px;
+        }
+
+        .bgimg{
+            background-image: url('/img/bd9-70.jpg');
+            background-size: cover;            
+        }
+        .textcolor{
+            color: whitesmoke;
+            letter-spacing: 10px;
+        }
+        /* 輪播圖右邊按鍵置右 */
+        .carousel-control-next {
+            justify-content: flex-start;
+        }
+
+        /* 輪播圖左邊按鍵置左 */
+        .carousel-control-prev {
+            justify-content: flex-end;
+        }
+
+        /* 最新消息 */
+        #news {
+            width: 100%;
+            height: auto;
+            
+            padding-bottom: 48px;
+        }
+
+        /* 商品介紹 */
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .fontbigger {
+            font-size: 20px;
+        }
+
+        /* 展示中心 */
+        .botton {
+            width: 150px;
+            height: 50px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            top: 45%;
+            border: solid 1.5px #3B3B3B;
+            border-radius: 50px;
+            cursor: pointer;
+            overflow: hidden;
+            transition-duration: 0.5s;
+            z-index: 1;
+        }
+
+        .botton:before {
+            content: "";
+            width: 250px;
+            height: 80px;
+            position: absolute;
+            background-color: #FF5C64;
+            top: -16px;
+            left: -270px;
+            border-radius: 50px;
+            transition-duration: 0.5s;
+        }
+
+        .botton:hover:before {
+            top: -16px;
+            left: -80px;
+        }
+
+        .botton:hover {
+            transform: scaleX(1.2) scaleY(1.2);
+            transform-origin: 50% 50%;
+        }
+
+        .botton:hover .text {
+            color: white;
+            font-size: 26px;
+            top: -1px;
+        }
+
+        .text {
+            position: relative;
+            font-size: 20px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 50px;
+            transition-duration: 0.5s;
+        }
+        .nounderline{
+            text-decoration: none !important;
+        }
+                #showcenter_R{
+            width: 50%;
+            height: inherit;
+        }
+        /* footer */
+        .aa {
+            float: left;            
+        }
+
+        .fb {
+            width: 170px;
+            height: 43px;
+        }
+/* 這是footer */
+        .footer {
+            background-color: #B97966;
+            width: 100%;
+            height: auto;
+            padding-top: 50px;
+        }
+        #footer-contant{
+            margin: 0 auto;
+            height: auto;
+            width: 100%; 
+            color: white;          
+        }
+        .container{
+            max-width: 1170px;
+        }
+        #phone{
+           padding-left: 44px; 
+        }
+        #fb_1{
+            background-image: url("img/FBoil170x37.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        #fb_2{
+            background-image: url("img/FBresturant170x37.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 這裡以下貼在<body>的下一行 -->
+    <nav class="navbar navbar-expand-md navbar-light bg-cus fixed-top ">
+        <div class="container ">
+            <a class="navbar-brand pt-0 pb-0" href="">
+
+                <img src="img/東成醬油-logo-pc.png" class=" align-top" alt="" id="logo_img">
+                <img src="img/東成醬油-logo-phone.png" class=" align-top" alt="" id="logo_img_2">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+                    <li class="nav-item text-sm-center">
+                        <a class="nav-link" href="#">關於東成 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item text-sm-center">
+                        <a class="nav-link" href="#">最新消息</a>
+                    </li>
+                    <li class="nav-item  text-sm-center">
+                        <a class="nav-link " href="#" id="navbarDropdown">商品介紹</a>
+                    </li>
+                    <li class="nav-item text-sm-center">
+                        <a class="nav-link " href="#">展示中心</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    <!-- 這裡以上貼在<body>的下一行 -->
+
+    <!-- 輪播圖 -->
+    <section id="carouselExampleControls" class="carousel slide bannerbgimg" data-ride="carousel">
+        <div class="container pt-5 pb-5">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/banner1.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/banner2.png" alt="Second slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- 最新消息 -->
+    <section id="news" class="bgclr1">
+        <div class="bgimg container-fluid">
+            <h3 class="text-center bgimg h3 pt-sm-4 pb-sm-4 pt-2 pb-2 textcolor">最新消息</h3>
+        </div>
+        <div class="container">
+            <div>
+
+                <div>
+                    <h5>2018/11/04</h5>
+                    <p>2019圍爐年菜，隆重推出！</p>
+                </div>
+                <hr>
+                <div>
+                    <h5>2018/11/04</h5>
+                    <p>2018尾牙 & 2019春酒，早鳥專案，開跑囉！</p>
+                </div>
+                <hr>
+                <div>
+                    <h5>2018/03/17</h5>
+                    <p>會館營業公告</p>
+                </div>
+                <hr>
+                <div>
+                    <h5>2018/01/22</h5>
+                    <p>東成醬油免運費107年3月1日起優惠取消公告</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </section>
+    <!-- 商品介紹 -->
+    <section class="bgclr2 pt-0 pb-3 position-relative">
+        <div class="bgimg container-fluid">
+            <h3 class="text-center bgimg h3 pt-sm-4 pb-sm-4 pt-2 pb-2 textcolor">商品介紹</h3>
+        </div>
+        <div class="container"></div>
+        <div>
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper pb-5 pt-3">
+                    <div class="swiper-slide flex-column">
+                        <img src="img/product/01-大目降系列/東成-精釀白曝油(250x300).jpg" alt="">
+                        精釀白曝油
+                    </div>
+                    <div class="swiper-slide flex-column">
+                        <img src="img/product/03-家庭料理/東成-白豆油(430cc)(250x300).jpg" alt="">
+                        家庭料理
+                    </div>
+                    <div class="swiper-slide flex-column d-inline-block">
+                        <img src="img/product/04-廚房調味/東成-原汁醬油1600ml.jpg" alt="">
+                        廚房調味
+                    </div>
+                    <div class="swiper-slide flex-column">
+                        <img src="img/product/05-都會時尚/東成-味味露(500cc)(250x300).jpg" alt="">
+                        都會時尚
+                    </div>
+                    <div class="swiper-slide flex-column">
+                        <img src="img/product/06-輕巧便利/東成-白曝油150cc(250x300).jpg" alt="">
+                        輕巧便利
+                    </div>
+                    <div class="swiper-slide flex-column">
+                        <img src="img/product/07-年節禮品/東成-原汁特調醬油2入禮盒(430cc)(250x300).jpg" alt="">
+                        年節禮品
+                    </div>
+                    <div class="swiper-slide flex-column">
+                        <img src="img/product/02-辣椒系列/東成-辣椒豆瓣醬-450g(250x300).jpg" alt="">
+                        辣椒系列
+                    </div>
+                    <div class="swiper-slide flex-column">
+                        <img src="img/product/05-都會時尚/東成-蒜蓉沾料(500CC)(250x300).jpg" alt="">
+                        都會時尚
+                    </div>
+                    <div class="swiper-slide flex-column">
+                        <img src="img/product/01-大目降系列/東成-鰹魚露(250x300).jpg" alt="">
+                        大目降
+                    </div>
+                    <div class="swiper-slide flex-column">
+                        <img src="img/product/05-都會時尚/東成-滷肉醬油500ML(250x300).jpg" alt="">
+                        都會時尚
+                    </div>
+
+                    <div class="swiper-slide  ">
+                        <span class="moreheight align-middle">看更多</span>
+                    </div>
+                    <div class="swiper-slide flex-column">
+                        <img src="img/product/03-家庭料理/東成-素蠔油(430cc).jpg" alt="">
+                        家庭料理
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <!-- 展示中心 -->
+    <section class="bgclr1">
+        <div class="bgimg container-fluid">
+            <h3 class="text-center bgimg h3 pt-sm-4 pb-sm-4 pt-2 pb-2 textcolor">展示中心</h3>
+        </div>
+        <div id="showcenter" class="container d-flex justify-content-between pb-5">
+            <div id="showcenter_L" class="pl-5 pt-5">
+                <h4 class="font-weight-bold pb-3">東成會館</h4>
+                <p class="fontbigger">電話 : 06-580-1919</p>
+                <p class="fontbigger">傳真 : 06-580-2766</p>
+                <p class="fontbigger pb-5">地址 : 台南市新化區中興路293號</p>
+                <a href="http://www.eastasty.com.tw/" target="_blank" class="nounderline">
+                    <div class="botton">
+                        <div class="text">點此進入</div>
+                    </div>
+                </a>
+            </div>
+            <div id="showcenter_R">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.9448524694403!2d120.32726231496784!3d23.025796984951462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7010ff47e47d%3A0xdb13965088ac8bea!2z5p2x5oiQ5pyD6aSoLeadseaIkOW5uOemj-WpmuWutOacg-mkqA!5e0!3m2!1szh-TW!2stw!4v1542175582173"
+                    width="100%" height="100%" frameborder="1" style="border:2px solid #B97966" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- 這是footer -->
+    <footer class="footer ">
+
+        <div id="footer-contant" class="container row justify-content-around">
+            <div class=" col-mb-2"></div>
+            <div id="footer_l" class="aa col-sm-5 col-12">
+                <p>東懋食品股份有限公司</p>
+                <p>DONG MAO FOODD LTD</p>
+                <p>電話 : 06-5901968</p>
+                <p>傳真 : 06-5901097</p>
+                <p>E-mail : sauce@dcsp.com.tw</p>
+                <p>台南市新化區知義里新和庄10-1號</p>
+            </div>
+            <div id="footer_r" class="aa col-sm-5 col-12">
+                <p>台北聯絡處</p>
+                <p>電話 : (02)28285629 </p>
+                <p id="phone">(03)3628929</span></p>
+                <p>傳真 : (02)28285628</p>
+                <p>E-mail : dcfoodtaipei@gmail.com</p>
+                <a href="https://zh-tw.facebook.com/%E6%9D%B1%E6%88%90%E9%86%AC%E6%B2%B9-152988991466430/?ref=page_internal">
+                    <div id="fb_1" class="aa fb cow-12 col-sm-4 mr-4"></div>
+                </a>                
+                
+                <a href="https://zh-tw.facebook.com/DongCheng065801919">
+                    <div id="fb_2" class="aa fb cow-12 col-sm-4 "></div>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+    <!-- swiperscript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.esm.js"></script>
+
+    <!-- navbarjs -->
+    <script src="navbar.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>
