@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <title>都會時尚系列</title>
+
+
+    <style>
+        body {            
+            background-color: #F6E6C9;
+            font-family:"微軟正黑體";
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        a {
+            color: white;
+        }
+
+        #navbar222 {
+            background-color: #B47764;
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            background-color: #2A1B1E;
+        }
+
+        #swiper_1 {
+            height: 10vh;
+        }
+
+        #swiper_1 .swiper-slide {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            font-size: 16px;
+            color: #fff;
+            background: #C1C0C0;
+        }
+
+        #swiper_1 .active-nav {
+            background: #B47764;
+        }
+
+        #swiper_2 {
+            height: 50vh;
+            background: #B47764;
+        }
+
+        #swiper_2 .swiper-slide {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            font-size: 36px;
+            color: #fff;
+        }
+
+        .productintro {
+            width: 300px;
+            height: 280px;
+            color: white;
+            padding-left: 10px;
+            font-size: 16px;
+            font-family: "微軟正黑體";
+        }
+
+        .productimg {
+            width: 160px;
+            height: 280px;
+            background-color: whitesmoke;
+        }
+
+        #img1 {
+            background-image: url("img/06-都會時尚/東成-非基因黃豆白曝油(500cc).png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #img2 {
+            background-image: url("img/06-都會時尚/東成-白曝油500CC.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #img3 {
+            background-image: url("img/06-都會時尚/東成-原汁醬油500CC.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #img4 {
+            background-image: url("img/06-都會時尚/東成-滷肉醬油 500ml.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #img5 {
+            background-image: url("img/06-都會時尚/東成-味霖調味露(500cc).png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #img6 {
+            background-image: url("img/06-都會時尚/東成-甜辣醬(500cc).png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #img7 {
+            background-image: url("img/06-都會時尚/東成-味味露(500cc).png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #img8 {
+            background-image: url("img/06-都會時尚/東成-辣椒王(500cc).png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #img9 {
+            background-image: url("img/06-都會時尚/東成-蒜蓉沾料(500cc).png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-cus fixed-top ">
+        <div class="container ">
+            <a class="navbar-brand pt-0 pb-0" href="">
+
+                <img src="img/東成醬油-logo-pc.png" class=" align-top" alt="" id="logo_img">
+                <img src="img/東成醬油-logo-phone.png" class=" align-top" alt="" id="logo_img_2">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+                    <li class="nav-item text-sm-center">
+                        <a class="nav-link" href="#">關於東成 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item text-sm-center">
+                        <a class="nav-link" href="#">最新消息</a>
+                    </li>
+                    <li class="nav-item  text-sm-center">
+                        <a class="nav-link " href="#" id="navbarDropdown">商品介紹</a>
+                    </li>
+                    <li class="nav-item text-sm-center">
+                        <a class="nav-link " href="#">展示中心</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+    <div id="navbar222" class="mb-3 mt-3 container nav-fill w-100">
+        <div class="container">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link " href="damu.html">大目降系列</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="spicy.html">辣椒系列</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="familymeal.html">家庭料理</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="kitchen.html">廚房調味</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="modern.html">都會時尚</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="lightConvenience.html">輕巧便利</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="festival.html">年節禮品</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="swiper-container" id="swiper_1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide active-nav">
+                    白曝油(非基因黃豆)</div>
+                <div class="swiper-slide">
+                    白曝油</div>
+                <div class="swiper-slide">
+                    原汁醬油</div>
+                <div class="swiper-slide">
+                    滷肉醬油</div>
+                <div class="swiper-slide">
+                    味霖調味露</div>
+                <div class="swiper-slide">
+                    甜辣醬</div>
+                <div class="swiper-slide">
+                    味味露</div>
+                <div class="swiper-slide">
+                    辣椒王</div>
+                <div class="swiper-slide">
+                    蒜蓉沾料</div>
+
+            </div>
+        </div>
+        <div class="swiper-container" id="swiper_2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide blue-slide">
+                    <div class="productimg" id="img1"></div>
+                    <div class="productintro text-left">
+                        白曝油(非基因黃豆) <br>
+                        編 號：105147001<br>
+                        規 格：500cc*12入(一箱)<br>
+                        市 價：2,400元<br>
+                        <br>
+                        說明:
+                        使用(非基因改造)高蛋白黃豆片、小麥釀造出琥珀色、豆油香、
+                        甘醇味俱全頂級壺底油，淺嚐淡淡豆油香口感層次豐富，
+                        品嘗濃郁甘醇味喉韻回味無窮，無論沾、煮、滷、燉料理呈現皆為上品。
+
+                    </div>
+                </div>
+                <div class="swiper-slide red-slide">
+                    <div class="productimg" id="img2"></div>
+                    <div class="productintro text-left">
+                        白曝油<br>
+                        編 號：15001001<br>
+                        規 格：500cc*12入(一箱)<br>
+                        市 價：1,740元<br>
+                        <br>
+                        說明:
+                        陳年純豆麥釀造出琥珀色、豆油香、甘醇味俱全頂級壺底油，
+                        淺嚐淡淡豆油香口感層次豐富，品嘗濃郁甘醇味喉韻回味無窮，
+                        無論沾、煮、滷、燉料理呈現皆為上品。 </div>
+                </div>
+                <div class="swiper-slide blue-slide">
+                    <div class="productimg" id="img3"></div>
+                    <div class="productintro text-left">
+                        原汁醬油<br>
+                        編 號：15006001<br>
+                        規 格：500cc*12入(一箱)<br>
+                        市 價：760元<br>
+                        <br>
+                        說明:
+                        以豆麥浸池發酵，抽取壓榨過濾調煮殺菌裝瓶，其味甘甜香醇，
+                        煮食有大豆香，耐煮而不揮發，不論沾、煮、滷皆適宜，
+                        稟承古法釀製行家口味，是最佳口感引導煮食調味。
+
+
+                    </div>
+                </div>
+                <div class="swiper-slide blue-slide">
+                    <div class="productimg" id="img4"></div>
+                    <div class="productintro text-left">
+                        滷肉醬油<br>
+                        編 號：15027001<br>
+                        規 格：500cc*12入(一箱)<br>
+                        市 價：700元<br>
+                        <br>
+                        說明:
+                        稟承古法釀製行家口味，是最佳口感引導最佳滷食調味，
+                        滷時醬油風味濃郁香醇色澤紅潤。
+
+                    </div>
+                </div>
+                <div class="swiper-slide blue-slide">
+                    <div class="productimg" id="img5"></div>
+                    <div class="productintro text-left">
+                        味霖調味露<br>
+                        編 號：15034001<br>
+                        規 格：500cc*12入(一箱)<br>
+                        市 價：484元<br>
+                        <br>
+                        說明:
+                        純豆麥原汁添加純米琳、紅麴、柴魚等風味調味料調製，
+                        無論湯頭、小炒、涼拌均適宜，外燴廚師推薦最佳調味品。
+                    </div>
+                </div>
+                <div class="swiper-slide blue-slide">
+                    <div class="productimg" id="img6"></div>
+                    <div class="productintro text-left">
+                        甜辣醬<br>
+                        編 號：20547001<br>
+                        規 格：500cc*12入(一箱)<br>
+                        市 價：760元<br>
+                        <br>
+                        說明:
+                        行家推薦優質沾醬，甜辣口感滿足，最適合甜不辣、關東煮搭配沾食使用，
+                        居家調味必備。
+                    </div>
+                </div>
+                <div class="swiper-slide blue-slide">
+                    <div class="productimg" id="img7"></div>
+                    <div class="productintro text-left">
+                        味味露<br>
+                        編 號：25041001<br>
+                        規 格：500cc*12入(一箱)<br>
+                        市 價：520元<br>
+                        <br>
+                        說明:
+                        在地台南最傳統的甘甘甜甜豆油膏，甘甜香醇豆麥調製，
+                        搵肉粽、碗稞、蛋餅、米血、黑輪、甜不辣....
+                        通通是行家推薦優質沾醬，居家調味必備。
+                    </div>
+                </div>
+                <div class="swiper-slide blue-slide">
+                    <div class="productimg" id="img8"></div>
+                    <div class="productintro text-left">
+                        辣椒王<br>
+                        編 號：25044001<br>
+                        規 格：500cc*12入(一箱)<br>
+                        市 價：490元<br>
+                        <br>
+                        說明:
+                        在地台南最傳統的辣辣甜甜辣椒膏，
+                        獨特辣椒口感搭配味味露沾醬使用美味倍增，
+                        搵肉粽、碗稞、蛋餅、米血、黑輪、甜不辣....
+                        通通是行家推薦優質沾醬，居家調味必備。
+                    </div>
+                </div>
+                <div class="swiper-slide orange-slide">
+                    <div class="productimg" id="img9"></div>
+                    <div class="productintro text-left">
+                        蒜蓉沾料<br>
+                        編 號：25048001<br>
+                        規 格：500cc*12入(一箱)<br>
+                        市 價：820元<br>
+                        <br>
+                        說明:
+                        行家推薦優質沾醬，新鮮蒜頭研磨顆粒+特製油膏，
+                        口感十足提味效果特佳，最適白切肉搭配沾醬，居家調味必備。
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="navbar.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+    <script>
+        var mySwiper1 = new Swiper('#swiper_1', {
+            watchSlidesProgress: true,
+            watchSlidesVisibility: true,
+            slidesPerView: 4.5,
+            onTap: function () {
+                mySwiper2.slideTo(mySwiper1.clickedIndex)
+            }
+        })
+        var mySwiper2 = new Swiper('#swiper_2', {
+            onSlideChangeStart: function () {
+                updateNavPosition()
+            }
+
+        })
+
+        function updateNavPosition() {
+            $('#swiper_1 .active-nav').removeClass('active-nav')
+            var activeNav = $('#swiper_1 .swiper-slide').eq(mySwiper2.activeIndex).addClass('active-nav');
+
+
+            if (!activeNav.hasClass('swiper-slide-visible')) {
+                console.log(1);
+                if (activeNav.index() > mySwiper1.activeIndex) {
+                    console.log(2);
+                    var thumbsPerNav = Math.floor(mySwiper1.width / activeNav.width()) - 1
+                    mySwiper1.slideTo(activeNav.index() - thumbsPerNav)
+                }
+                else {
+                    console.log(3);
+                    mySwiper1.slideTo(activeNav.index())
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
