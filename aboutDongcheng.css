@@ -1,0 +1,247 @@
+        *{
+            box-sizing: border-box;
+        }
+        
+        body{
+            padding-top: 70px;
+            margin: 0;
+            background-color: #F6D8AC;
+            font-family: Arial,"微軟正黑體","Microsoft JhengHei","標楷體",sans-serif;
+        }
+        .bg-cus {
+          background-color: #b97966;
+        }   
+        .navbar-light .navbar-nav .nav-link {
+          color:white;
+        }
+        .navbar-light .navbar-toggler {
+        border-color:transparent;
+        }
+    
+        #logo_img{
+            background-image: url("/img/東成醬油-logo-pc.png");
+            width: 237px;
+            height: 54px;
+            background-size: cover;
+            transition: all 0.5s ease;
+        }
+        .container{
+            max-width: 1170px;
+            padding: 0;
+        }
+
+        /*背景色*/
+        #bgc{
+            position: relative;
+        }
+
+        .bgc1,.bgc3{
+            background-color: #F6D8AC;
+        }
+                    
+        .bgc2,.bgc4{
+            background-color: #F9E8CA;
+        }
+
+        
+
+        /* 關於東成導覽列 */
+
+        ul#aboutNav{
+            background-color:#ca9c90;
+            list-style: none;
+            padding: 0;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+
+        .aboutNavli{
+            color:#2B1C1F;
+            background-color:rgb(241, 228, 215);
+            margin-bottom: 10px;
+            text-align: center;
+            line-height: 44px;
+            font-size: 18px;
+            letter-spacing: 4px;
+            border-radius: 10px;
+        }
+
+        a{
+            color: #2B1C1F;
+        }
+
+        a:hover{
+            text-decoration: none;
+        }
+
+         /* 包標題及水平線 */
+         .top{
+            width: 136px;
+            height: 40px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 50px;
+            
+        }
+
+        h3{
+            letter-spacing: 6px;
+            text-align:center;
+     
+        }
+
+        p{
+            text-align: justify;
+            text-justify:inter-ideograph;
+            letter-spacing: 2px;
+        
+        }
+
+        .service p{
+            text-align:center;
+        }    
+
+        
+        .aa {
+            float: left;            
+        }
+
+        .fb {
+            width: 170px;
+            height: 43px;
+        }
+
+        .footer {
+            background-color: #B97966;
+            width: 100%;
+            height: auto;
+            padding-top: 50px;
+        }
+        #footer-contant{
+            margin: 0 auto;
+            height: auto;
+            width: 100%; 
+            color: white;          
+        }
+        .container{
+            max-width: 1170px;
+        }
+        #phone{
+           padding-left: 44px; 
+        }
+        #fb_1{
+            background-image: url("img/FBoil170x37.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        #fb_2{
+            background-image: url("img/FBresturant170x37.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+        /* Navbar電腦版 */
+        @media screen and (min-width:769px){
+         nav.navbar.shrink {
+                min-height: 60px;
+            }
+    
+        nav.navbar.shrink #logo_img{
+                width: 193px;
+                height: 44px;
+            }
+        #logo_img{
+               display:block;
+            }
+        #logo_img_2{
+               display:none;
+            }     
+
+         /* 內文寬度 */
+        .about,.idea,.vision,.service{
+            width: 520px;
+            margin-left: auto;
+            margin-right: auto; 
+            padding: 50px 0;
+            color:  #2B1C1F;
+        }
+
+        /* 關於東成導覽列定位 */
+        ul#aboutNav{
+            position: fixed;
+            top: 20%;
+            left: 22%;
+            border-radius: 10px;
+            width: 140px;
+            height: 210px;
+        }
+
+        .aboutNavli{
+            width: 120px;
+            height: 40px;
+        }
+
+
+
+
+
+        }  
+        /* Navbar平板部分 */
+        @media screen and (max-width:768px) and (min-width:576px){
+            img#logo_img{
+               display:block;
+            }
+            #logo_img_2{
+               display:none;
+            }
+
+         /* 內文寬度 */
+        .about,.idea,.vision,.service{
+            width: 450px;
+            margin-left: auto;
+            margin-right: auto; 
+            padding: 50px 0;
+            color:  #2B1C1F;
+        }
+        
+        /* 關於東成導覽列定位 */
+        ul#aboutNav{
+            position: fixed;
+            top: 20%;
+            left: 3%;
+            width: 120px;
+            height: 170px;
+        }
+
+        .aboutNavli{
+            width: 100px;
+            height: 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            line-height:30px;
+        }
+
+        }
+        /* Navbar手機板 */
+        @media screen and (max-width:576px){
+            img#logo_img{
+               display:none;
+            }
+            #logo_img_2{
+               display:block;
+            }
+            
+         /* 內文寬度 */
+        .about,.idea,.vision,.service{
+            width: 350px;
+            margin-left: auto;
+            margin-right: auto; 
+            padding: 50px 0;
+            color:  #2B1C1F;
+        }
+        ul#aboutNav{
+            display: none;
+        }
+
+        }
+        

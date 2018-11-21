@@ -1,0 +1,161 @@
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            padding-top: 60px;
+            margin: 0;
+            font-family: Arial,"微軟正黑體","Microsoft JhengHei","標楷體",sans-serif;
+        }
+        .bg-cus {
+          background-color: #b97966;
+        }   
+        .navbar-light .navbar-nav .nav-link {
+          color:white;
+        }
+        .navbar-light .navbar-toggler {
+        border-color:transparent;
+        }
+    
+        #logo_img{
+            background-image: url("/img/東成醬油-logo-pc.png");
+            width: 237px;
+            height: 54px;
+            background-size: cover;
+            transition: all 0.5s ease;
+        }
+        .container{
+            max-width: 1170px;
+            padding: 0;
+        }
+
+        /* 背景 */
+        #connectionbgc{
+            background-color:#F6D8AC;          
+        }
+
+        .connectioncontainer{
+            background-color:#F6D8AC;  
+            padding-bottom: 50px;    
+        }
+
+        /* 聯絡我們 */
+        .connectiontop{
+            width: 145px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        h3{
+            letter-spacing: 8px;
+        }
+
+        label{
+            font-size: 18px;
+        }
+
+        /* 表單 */
+        .form-group{
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 5px;
+            width: 350px; 
+            margin-left: auto;
+            margin-right: auto;     
+        }
+
+         /* 留言寬度 */
+         #message{
+           width: 350px;
+        }
+
+        .aa {
+            float: left;            
+        }
+
+        .fb {
+            width: 170px;
+            height: 43px;
+        }
+
+        .footer {
+            background-color: #B97966;
+            width: 100%;
+            height: auto;
+            padding-top: 50px;
+        }
+        #footer-contant{
+            margin: 0 auto;
+            height: auto;
+            width: 100%; 
+            color: white;          
+        }
+        .container{
+            max-width: 1170px;
+        }
+        #phone{
+           padding-left: 44px; 
+        }
+        #fb_1{
+            background-image: url("img/FBoil170x37.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        #fb_2{
+            background-image: url("img/FBresturant170x37.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+ 
+        /* Navbar電腦版 */
+        @media screen and (min-width:769px){
+        nav.navbar.shrink {
+                min-height: 60px;
+            }
+    
+        nav.navbar.shrink #logo_img{
+                width: 193px;
+                height: 44px;
+            }
+        #logo_img{
+               display:block;
+            }
+        #logo_img_2{
+               display:none;
+            }      
+        }
+
+        /* Navbar平板部分 */
+        @media screen and (max-width:768px) and (min-width:576px){
+        img#logo_img{
+               display:block;
+            }
+        #logo_img_2{
+               display:none;
+            }
+        }
+
+        /* Navbar手機板 */
+        @media screen and (max-width:576px){
+        img#logo_img{
+               display:none;
+            }
+        #logo_img_2{
+               display:block;
+            }
+
+         /* 表單寬度 */
+        .form-group{
+            width: 250px; 
+        }
+
+        /* 留言寬度 */
+        #message{
+            width: 250px;
+        }
+
+        }
+        
