@@ -109,6 +109,34 @@
             justify-content: center;
         }
 
+        .modal{
+            top: 15%;
+        }
+
+        .modal-header {
+            display: flex;
+        }
+    
+        .modalheaderBgc {
+            background-color: #F4C78C;
+            width: 300px;
+            height: 100px;
+            float: left;
+        }
+    
+        .modaltextBgc {
+            background-color: #F5D7AB;
+            width: 300px;
+            height: 500px;
+            float: left;
+ 
+        }
+    
+        .img-fluid {
+            width: 500px;
+            height: 600px;
+    
+        }
 
 
         /* footer */
@@ -168,6 +196,8 @@
             #logo_img_2{
                display:none;
             } 
+
+
 
             .page-item2,.page-item3{
                 display: none;
