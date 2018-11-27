@@ -1,0 +1,200 @@
+        *{
+            box-sizing: border-box;     
+        }
+        
+        body{
+            padding-top: 60px;
+            margin: 0;
+            background-color:#F5D7AB;
+            font-family: Arial,"微軟正黑體","Microsoft JhengHei","標楷體",sans-serif;
+        }
+        .bg-cus {
+          background-color: #b97966;
+        }   
+        .navbar-light .navbar-nav .nav-link {
+          color:white;
+        }
+        .navbar-light .navbar-toggler {
+        border-color:transparent;
+        }
+    
+        #logo_img{
+            background-image: url("/img/東成醬油-logo-pc.png");
+            width: 237px;
+            height: 54px;
+            background-size: cover;
+            transition: all 0.5s ease;
+        }
+        .container{
+            max-width: 1170px;
+            padding: 0;
+        }
+
+        #allnews{
+            max-width: 1170px;
+            background-color:#F5D7AB;
+            padding-top: 50px;
+            padding-bottom: 150px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .latestnews{
+            width: 136px;
+            height: 40px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 60px;  
+        }
+
+        h3{
+            letter-spacing: 6px;
+            text-align:center;
+        }
+
+        #newscontainer{
+			display: flex;
+			flex-wrap: wrap;
+            justify-content: space-around;              
+        }
+
+        .newsbox{
+            background-color: #b97966;
+            width: 300px;
+            height: 200px;
+            margin-bottom: 40px;
+            border: 1px solid #B87966;
+       
+        }
+
+        .newstop{
+            background-color: #B87966;
+            width: 100%;
+            height: 20%;
+            text-align: left;
+            color: white;
+            padding-left: 19px;
+            padding-top: 10px;
+            letter-spacing: 2px;
+        }
+
+        .newscenter{
+            background-color:#F6E6CF;
+            width: 100%;
+            height: 65%;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex; 
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            letter-spacing: 3px;
+        }
+
+        .textP{
+            margin-block-end: 0px;
+            margin-block-start: 0px;
+            text-align: center;   
+            
+        }
+
+        .newsbottom{
+            background-color:#B87966;
+            width: 100%;
+            height: 15%;
+        }
+
+        .pagination{
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+        /* footer */
+
+        .aa {
+            float: left;            
+        }
+
+        .fb {
+            width: 170px;
+            height: 43px;
+        }
+
+        .footer {
+            background-color: #B97966;
+            width: 100%;
+            height: auto;
+            padding-top: 50px;
+        }
+        #footer-contant{
+            margin: 0 auto;
+            height: auto;
+            width: 100%; 
+            color: white;          
+        }
+        .container{
+            max-width: 1170px;
+        }
+        #phone{
+           padding-left: 44px; 
+        }
+        #fb_1{
+            background-image: url("img/FBoil170x37.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        #fb_2{
+            background-image: url("img/FBresturant170x37.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        
+        /* Navbar電腦版 */
+        @media screen and (min-width:769px){
+            nav.navbar.shrink {
+                min-height: 60px;
+            }
+    
+            nav.navbar.shrink #logo_img{
+                width: 193px;
+                height: 44px;
+            }
+            #logo_img{
+               display:block;
+            }
+            #logo_img_2{
+               display:none;
+            } 
+
+            .page-item2,.page-item3{
+                display: none;
+            }
+
+       
+
+            
+            
+            
+        }
+        /* Navbar平板部分 */
+        @media screen and (max-width:768px) and (min-width:576px){
+            img#logo_img{
+               display:block;
+            }
+            #logo_img_2{
+               display:none;
+            }
+        }
+        /* Navbar手機板 */
+        @media screen and (max-width:576px){
+            img#logo_img{
+               display:none;
+            }
+            #logo_img_2{
+               display:block;
+            }
+        }
+        
