@@ -109,35 +109,31 @@
             justify-content: center;
         }
 
-        .modal{
-            top: 15%;
-        }
-
-        .modal-header {
-            display: flex;
-        }
-    
-        .modalheaderBgc {
+        .modal-header{
             background-color: #F4C78C;
-            width: 300px;
-            height: 100px;
-            float: left;
-        }
-    
-        .modaltextBgc {
-            background-color: #F5D7AB;
-            width: 300px;
-            height: 500px;
-            float: left;
- 
-        }
-    
-        .img-fluid {
-            width: 500px;
-            height: 600px;
-    
         }
 
+        h4{
+            letter-spacing: 2px;
+        }
+
+        .modal-body{
+            background-color: #F5D7AB;
+        }
+
+        .modal-body p,li{
+            letter-spacing: 3px;
+            font-size: 16px;
+        }
+
+        ol{
+            list-style-type: cjk-ideographic;
+        }
+
+        #exampleModal_4,#exampleModal_5,#exampleModal_6,#exampleModal_7,#exampleModal_8{ 
+            top: 50%;
+            transform: translate(0,-50%);
+        }
 
         /* footer */
 
@@ -197,8 +193,6 @@
                display:none;
             } 
 
-
-
             .page-item2,.page-item3{
                 display: none;
             }
@@ -216,6 +210,10 @@
             }
             #logo_img_2{
                display:none;
+            }
+            
+            .page-item2,.page-item3{
+                display: none;
             }
         }
         /* Navbar手機板 */
