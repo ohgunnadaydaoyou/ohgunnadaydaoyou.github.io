@@ -44,36 +44,6 @@
         }
 
         
-
-        /* 關於東成導覽列 */
-
-        ul#aboutNav{
-            background-color:#ca9c90;
-            list-style: none;
-            padding: 0;
-            padding-top: 10px;
-            padding-left: 10px;
-        }
-
-        .aboutNavli{
-            color:#2B1C1F;
-            background-color:rgb(241, 228, 215);
-            margin-bottom: 10px;
-            text-align: center;
-            line-height: 44px;
-            font-size: 18px;
-            letter-spacing: 4px;
-            border-radius: 10px;
-        }
-
-        a{
-            color: #2B1C1F;
-        }
-
-        a:hover{
-            text-decoration: none;
-        }
-
          /* 包標題及水平線 */
          .top{
             width: 136px;
